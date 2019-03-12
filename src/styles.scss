@@ -1,0 +1,71 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    background:white;
+}
+
+$headerHeight: 50px;
+$containerSubtract: 55px;
+.header {
+    height: $headerHeight;
+    background:blue;
+    min-height: $headerHeight;
+    color:white;
+    padding:5px;
+
+    .title {
+        color:white;
+    }
+}
+
+// .app-content {
+//     min-height: 300px;
+//     border: 1px solid;
+//     margin-top:5px;
+// }
+
+.center-it {
+    margin: 0 auto;
+    width: 400px;
+}
+
+.bold {
+    font-weight: bold;
+}
+.big {
+    font-size: 20px;
+}
+
+.chks {
+    text-align: center;
+    input {
+        display: inline-block;
+        padding:5px;
+        margin: 5px;
+    }
+}
+
+
+.done .txt  {
+    text-decoration: line-through;
+}
+
+.has-dropdown.active > .navbar-link {
+    color:darkgreen;
+}
+a.active {color:red}
+
+input,textarea,select {
+    display: block;
+    width:93%;
+    margin-bottom: 10px;
+    padding:1em;
+    outline: none;
+
+    &.ng-invalid {
+        border:1px solid tomato;
+    }
+    &.ng-valid {
+        // background: lightgreen;
+        border:1px solid green;
+    }
+}
